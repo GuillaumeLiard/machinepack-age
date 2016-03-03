@@ -1,42 +1,48 @@
 {
-  "name"           : "machinepack-age",
-  "version"        : "0.1.2",
-  "description"    : "A machinepack that allows you to work with ages.",
-  "main"           : "index.js",
-  "scripts"        : {
-    "test": "node_modules/mocha/bin/mocha -b test/unit/*.js"
-  },
-  "repository"     : {
-    "type": "git",
-    "url" : "git@github.com:SpoonX/machinepack-age.git"
-  },
-  "keywords"       : [
-    "node-machine",
-    "date",
-    "age",
-    "treeline",
-    "machinepack",
-    "machines",
-    "calculate age"
-  ],
-  "devDependencies": {
-    "chai" : "^2.1.0",
-    "mocha": "^2.1.0"
-  },
-  "dependencies"   : {
-    "machine": "^4.0.0"
-  },
-  "author"         : "SpoonX",
-  "license"        : "MIT",
-  "machinepack"    : {
-    "friendlyName": "Age",
-    "machineDir"  : "machines/",
-    "machines"    : [
-      "calculate"
-    ]
-  },
-  "bugs"           : {
-    "url": "https://github.com/SpoonX/machinepack-age/issues"
-  },
-  "homepage"       : "https://github.com/SpoonX/machinepack-age"
+    "name": "machinepack-age",
+    "version": "0.1.2",
+    "description": "A machinepack that allows you to work with ages.",
+    "main": "index.js",
+    "scripts": {
+        "test": "node_modules/mocha/bin/mocha -b test/unit/*.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:SpoonX/machinepack-age.git"
+    },
+    "keywords": [
+        "node-machine",
+        "date",
+        "age",
+        "treeline",
+        "machinepack",
+        "machines",
+        "calculate age"
+    ],
+    "devDependencies": {
+        "chai": "^2.1.0",
+        "mocha": "^2.1.0"
+    },
+    "dependencies": {
+        "browserify-transform-machinepack": "^1.0.3",
+        "machine": "^4.0.0"
+    },
+    "browserify": {
+        "transform": [
+            "browserify-transform-machinepack"
+        ]
+    },
+    "author": "SpoonX",
+    "license": "MIT",
+    "machinepack": {
+        "friendlyName": "Age",
+        "machineDir": "machines/",
+        "machines": [
+            "calculate"
+        ]
+    },
+    "bugs": {
+        "url": "https://github.com/SpoonX/machinepack-age/issues"
+    },
+    "homepage": "https://github.com/SpoonX/machinepack-age"
 }
